@@ -2,7 +2,7 @@
 
 Name:           %{?scl_prefix}perl-DateTime-TimeZone
 Version:        2.01
-Release:        3%{?dist}
+Release:        2%{?dist}
 Summary:        Time zone object base class and factory
 License:        GPL+ or Artistic
 Group:          Development/Libraries
@@ -111,9 +111,6 @@ offset from GMT for a given time period.
 %{_mandir}/man3/*
 
 %changelog
-* Sun Jul 24 2016 Petr Pisar <ppisar@redhat.com> - 2.01-3
-- Rebuild without bootstrap
-
 * Mon Jul 18 2016 Petr Pisar <ppisar@redhat.com> - 2.01-2
 - SCL
 
