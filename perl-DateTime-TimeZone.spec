@@ -12,7 +12,7 @@
 
 Name:           %{?scl_prefix}perl-DateTime-TimeZone
 Version:        2.38
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        Time zone object base class and factory
 # tzdata%%{tzversion}.tar.gz archive:   Public Domain
 # other files:                          GPL+ or Artistic
@@ -148,6 +148,9 @@ JOBS=$(printf '%%s' "%{?_smp_mflags}" | sed 's/.*-j\([0-9][0-9]*\).*/\1/')
 %{_mandir}/man3/*
 
 %changelog
+* Tue Jan 07 2020 Jitka Plesnikova <jplesnik@redhat.com> - 2.38-3
+- Re-rebuild of bootstrapped packages
+
 * Mon Jan 06 2020 Jitka Plesnikova <jplesnik@redhat.com> - 2.38-2
 - SCL
 
